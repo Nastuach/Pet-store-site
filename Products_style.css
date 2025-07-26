@@ -1,0 +1,190 @@
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+    margin: 5%;
+}
+
+.product-card {
+    border: 0.3vw solid #ddd;
+    border-radius: 2%;
+    padding: 3%;
+    text-align: center;
+    transition: transform 0.2s;
+    background-color: #232222;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.product-card img {
+    width: 22vw;
+    height: auto;
+    border-radius: 2% 2% 0 0;
+}
+
+.rating{
+    font-size: 1.5vw;
+}
+
+.product-card h3 {
+    font-size: 1.5vw;
+    margin: 2% 0;
+}
+
+.product-card p {
+    color: #555;
+    font-size: 1.35vw;
+}
+
+.product-card .price {
+    font-size: 1.4vw;
+    color: #8a3ffc;
+    margin-bottom: 2%;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #111111;
+    padding: 1% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5vw;
+    color: white;
+}
+
+header div {
+    margin-right: 5%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+    font-size: 1.35vw;
+}
+
+nav a.active {
+    color: #8a3ffc;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.35vw;
+    cursor: pointer;
+    color: white;
+    background-color: #6a0dad;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button#register {
+    background-color: #8a3ffc;
+}
+
+button#login {
+    background-color: transparent;
+    border: 0.2vw solid #8a3ffc;
+}
+
+main h2 {
+    color: #c1bfbf;
+    font-size: 4vw;
+}
+
+footer {
+    background-color: #111111;
+    padding: 0;
+    text-align: center;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1vw;
+    margin: 1%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.paw {
+    position: relative;
+    width: 6vw;
+    height: 6vh;
+    margin-left: 10%;
+}
+
+.pad {
+    width: 64%;
+    height: 64%;
+    background-color: #8a3ffc;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 22%;
+}
+
+.toe {
+    width: 30%;
+    height: 30%;
+    background-color: #8a3ffc;
+    border-radius: 50%;
+    position: absolute;
+}
+.toe1 {
+    top: 20%;
+    left: -10%;
+}
+.toe2 {
+    top: -6%;
+    left: 18%;
+}
+.toe3 {
+    top: -6%;
+    left: 56%;
+}
+.toe4 {
+    top: 20%;
+    left: 84%;
+}
